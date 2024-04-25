@@ -59,7 +59,7 @@ const ImageCompressor: React.FC = () => {
           newImages.push(imageInfo);
         }
         setOriginalImages(Array.from(files));
-        setImages((prevImages) => [...prevImages, ...newImages]);
+        setImages((prevImages) => [...newImages, ...prevImages, ]);
       } catch (error) {
         console.error("Error comprimiendo las imágenes:", error);
       }
@@ -83,7 +83,7 @@ const ImageCompressor: React.FC = () => {
           newImages.push(imageInfo);
         }
         setOriginalImages(Array.from(files));
-        setImages((prevImages) => [...prevImages, ...newImages]);
+        setImages((prevImages) => [...newImages, ...prevImages, ]);
       } catch (error) {
         console.error("Error comprimiendo las imágenes:", error);
       }
