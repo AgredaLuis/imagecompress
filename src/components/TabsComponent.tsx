@@ -172,14 +172,14 @@ const TabsComponent = () => {
   return (
     <div className="flex justify-center items-center">
       <div className="max-w-md flex flex-col gap-y-2 w-full">
-        <div className=" p-1 flex justify-between items-center gap-x-2 font-bold text-white ">
+        <div className=" p-1 grid grid-cols-2 sm:flex sm:flex-row justify-between items-center gap-x-2 font-bold text-white ">
           {items.map((item, index) => (
             <button
               key={index}
               ref={item.title === "Tab 1" ? firstTab : null}
               aria-label={`${item.title} code example`}
               onClick={() => handleTabClick(index)}
-              className={`border-b-4  outline-none w-full p-2 hover:border-b-4 hover:border-blue-300 text-center ${
+              className={` border-b-4  outline-none w-full p-2 hover:border-b-4 hover:border-blue-300 text-center ${
                 selectedTab === index ? "border-blue-600" : "border-transparent"
               }`}
             >

@@ -3,7 +3,7 @@ import Image from "next/image";
 const Features = () => {
   return (
     <div id="features" className="flex flex-col justify-center items-center w-full py-14 px-4 md:px-14 lg:px-32 ">
-      <h2 className="text-4xl font-bold pb-6">Make your website faster</h2>
+      <h2 className="text-4xl font-bold pb-6 px-4 text-center">Make your website faster</h2>
       <p className="text-center text-lg lg:text-2xl">
         Images can account for 50% of your loading time.
       </p>
