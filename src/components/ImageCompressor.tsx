@@ -130,7 +130,7 @@ const ImageCompressor: React.FC = () => {
             improve web performance and save time. It takes one click to resize,
             compress and convert your images to WebP.
           </p>
-          <button onClick={handleUploadButtonClick} className=" bg-blue-500 hover:bg-blue-700 text-white rounded-xl font-bold py-4 px-10  mt-10 text-xl">
+          <button aria-label="Upload a image buttom" onClick={handleUploadButtonClick} className=" bg-blue-500 hover:bg-blue-700 text-white rounded-xl font-bold py-4 px-10  mt-10 text-xl">
             Upload Image
           </button>
         </div>
@@ -142,7 +142,7 @@ const ImageCompressor: React.FC = () => {
         >
           <div className="max-w-2xl mx-auto">
             <div className="flex items-center justify-center w-full">
-              <label className="flex flex-col items-center justify-center w-full h-[320px] border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+              <label className="flex flex-col items-center justify-center w-full h-[320px] border-2 border-gray-100 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-100 dark:hover:bg-gray-600">
                 <div className="flex flex-col items-center justify-center pt-5 pb-6">
                   <svg
                     className="w-10 h-10 mb-3 text-gray-400"
@@ -158,11 +158,11 @@ const ImageCompressor: React.FC = () => {
                       d="M7 16a4 4 0 01-4-4V6a2 2 0 012-2h14a2 2 0 012 2v6a2 2 0 01-2 2m-4 4v2m0 0h-2m2 0h2m-2 0l2-2-2-2"
                     />
                   </svg>
-                  <p className="mb-2 text-sm text-gray-500 dark:text-gray-400">
+                  <p className="mb-2 text-sm dark:text-gray-100">
                     <span className="font-semibold">Click to upload</span> or
                     drag and drop
                   </p>
-                  <p className="text-xs text-gray-500 dark:text-gray-400">
+                  <p className="text-xs text-gray-500 dark:text-gray-100">
                     SVG, PNG, JPG or GIF (MAX. 800x400px)
                   </p>
                 </div>
@@ -236,6 +236,7 @@ const ImageCompressor: React.FC = () => {
                     <td className="border border-gray-400 px-4 py-2">
                       {image.compressedImage && (
                         <button
+                        aria-label="Download image"
                           onClick={() =>
                             handleDownload(
                               image.compressedImage!,

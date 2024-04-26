@@ -4,9 +4,9 @@ const Features = () => {
   return (
     <div id="features" className="flex flex-col justify-center items-center w-full py-14 px-4 md:px-14 lg:px-32 ">
       <h2 className="text-4xl font-bold pb-6 px-4 text-center">Make your website faster</h2>
-      <p className="text-center text-lg lg:text-2xl">
+      <h3 className="text-center text-lg lg:text-2xl">
         Images can account for 50% of your loading time.
-      </p>
+      </h3>
       <p className="text-center text-lg lg:text-2xl">
         By compressing them, you will gain precious seconds
       </p>
@@ -14,7 +14,7 @@ const Features = () => {
         <div className=" flex flex-col justify-center items-center">
           <Image
             src="/search.png"
-            alt="search image"
+            alt="grapihics representing search engine optimization"
             width={60}
             height={50}
             className="pb-12"
@@ -30,7 +30,7 @@ const Features = () => {
         <div className=" flex flex-col justify-center items-center ">
           <Image
             src="/seo.png"
-            alt="search image"
+            alt="magnifying glass with SEO performance"
             width={60}
             height={50}
             className="pb-12"
@@ -46,7 +46,7 @@ const Features = () => {
         <div className=" flex flex-col justify-center items-center">
           <Image
             src="/startup.png"
-            alt="search image"
+            alt="starship image representing a startup"
             width={60}
             height={50}
             className="pb-12"

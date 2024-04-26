@@ -200,7 +200,7 @@ const TabsComponent = () => {
               <pre>
                 <code>{item.content}</code>
               </pre>
-                <button onClick={() => handleCopy(item.content)} className="absolute top-0 right-0 mt-4 mr-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                <button aria-label="Copy content buttom" onClick={() => handleCopy(item.content)} className="absolute top-0 right-0 mt-4 mr-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                 {copied ? (<FaCheck />) : (<FaCopy />)}
                 </button>
             </div>
