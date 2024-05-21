@@ -24,13 +24,13 @@ const Navbar = () => {
             <nav aria-label="Global" className="hidden md:block">
               <ul className="flex items-center gap-6 text-md">
                 <li>
-                  <Link className="text-gray-500 transition hover:text-gray-500/75" href="#features"> Features </Link>
+                  <Link className="font-semibold text-gray-500 transition hover:text-blue-700" href="#features"> Features </Link>
                 </li>
                 <li>
-                  <Link className="text-gray-500 transition hover:text-gray-500/75" href="#api"> API </Link>
+                  <Link className="font-semibold text-gray-500 transition hover:text-blue-700" href="#api"> API </Link>
                 </li>
                 <li>
-                  <a className="text-gray-500 transition hover:text-gray-500/75" href="https://antuan01.com/" target="_blank" rel="noopener noreferrer" > AntuanCV </a>
+                  <a className="font-semibold text-gray-500 transition hover:text-blue-700" href="https://antuan01.com/" target="_blank" rel="noopener noreferrer" > AntuanCV </a>
                 </li>
               </ul>
             </nav>
@@ -63,8 +63,8 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden">
           <div className="flex flex-col bg-gray-50 px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a href="#" className="text-gray-500 hover:text-gray-500/75">About</a>
-            <a href="#" className="text-gray-500 hover:text-gray-500/75">API</a>
+            <Link href="#features" className="text-gray-500 hover:text-gray-500/75">About</Link>
+            <Link href="#api" className="text-gray-500 hover:text-gray-500/75">API</Link>
           </div>
         </div>
       )}

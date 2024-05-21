@@ -2,6 +2,7 @@
 import React, { ChangeEvent, useState } from "react";
 import FormData from "form-data";
 import Image from "next/image";
+import toast, { Toaster } from "react-hot-toast";
 
 interface ImageInfo {
   originalName: string;
@@ -60,6 +61,7 @@ const ImageCompressor: React.FC = () => {
         }
         setOriginalImages(Array.from(files));
         setImages((prevImages) => [...newImages, ...prevImages, ]);
+        toast.success("Images compressed successfully");
       } catch (error) {
         console.error("Error comprimiendo las imágenes:", error);
       }
@@ -133,6 +135,7 @@ const ImageCompressor: React.FC = () => {
           <button aria-label="Upload a image buttom" onClick={handleUploadButtonClick} className=" bg-blue-500 hover:bg-blue-700 text-white rounded-xl font-bold py-4 px-10  mt-10 text-xl">
             Upload Image
           </button>
+          <Toaster position="top-center" reverseOrder={false} />
         </div>
 
         <div
